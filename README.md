@@ -1,2 +1,0 @@
-# SaumitraChaskar.github.io
-Blog

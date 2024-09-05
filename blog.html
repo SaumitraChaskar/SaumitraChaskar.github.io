@@ -4,11 +4,10 @@ title: Blog
 ---
 <h1>Latest Posts</h1>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
+<div>
+  {% assign sorted_posts = site.posts | sort: 'date' %}
+  {% for post in sorted_posts %}
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
-    </li>
+      <p>{{ post.excerpt }}</p>
   {% endfor %}
-</ul>
+</div>
